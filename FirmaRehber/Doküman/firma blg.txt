@@ -1,0 +1,30 @@
+Firma Adý
+Telefon No.
+Faks No.
+GSM No.
+Vergi Dairesi
+Vergi Numarasý
+Web Site
+
+Adres
+Ülke
+Þehir
+Ýlçe
+Semt
+
+----------firma bilgileri------------
+Firma Yetkilisi
+Pozisyonu (combo)
+Kuruluþ Yýlý
+Ýþletme Türü(combo)
+Yýllýk Ciro(combo)
+Çalýþan sayýsý(combo)
+Firma Hakkýnda
+Ýliþkili Kelimeler (etiketler)
+
+
+-----------Faaliyet alanlarý-----------
+
+
+------------harita konum--------------
+-------------logo resim---------------

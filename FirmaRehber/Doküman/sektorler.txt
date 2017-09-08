@@ -1,0 +1,44 @@
+1	Ahþap ve Aðaç Sektörü
+2	Alüminyum ve Yan Sanayi
+3	Ambalaj ve Yan Sanayi
+4	Bahçe-Çicek-Peyzaj
+5	Biliþim Sektörü
+6	Boya Sektörü
+7	Büro ve Kýrtasiye
+8	Cam ve Ayna
+9	Dekorasyon Sektörü
+10	Demir-Çelik Sanayi
+11	Denizcilik Sektörü
+12	Deri ve Yan Sanayi
+13	Elektrik Sektörü
+14	Elektronik Sektörü
+15	Endüstriyel Ürünler
+16	Film ve Müzik Sektörü
+18	Güzellik-Bakým-Kuaför
+19	Hayvancýlýk Sektörü
+20	Isýtma ve Soðutma
+21	Ýnþaat ve Yan Sanayi
+22	Kaðýt Sanayi
+23	Kimya Sanayi
+24	Maden ve Metal Sanayi
+25	Makine Sanayi
+26	Mobilya Sanayi
+27	Otomotiv Yan Sanayi
+28	Oyun ve Oyuncak
+29	Petrol ve Yan Sanayi
+30	Plastik Sanayi
+31	Promosyon Sektörü
+32	Saðlýk ve Medikal 
+33	Silah ve Av Sektörü
+34	Spor Sektörü
+35	Taký ve Mücevharat
+36	Tekstil Sektörü
+37	Telekomünikasyon
+38	Temizlik Sektörü
+39	Saat Sektörü
+40	Züccaciye Sektörü
+41	Hýrdavat ve Rulman
+42	Gsm ve Yan Sanayi
+43	Gözlük ve Þemsiye
+44	Diðerleri
+45	Gýda ve Ürünleri

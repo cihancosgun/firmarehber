@@ -1,0 +1,576 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{058CE7A7-96AA-42AC-B576-049BA13F00F4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FirmaRehber</RootNamespace>
+    <AssemblyName>FirmaRehber</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>http://localhost/FirmaRehber/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\SelecterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\SelecterForm.Designer.cs">
+      <DependentUpon>SelecterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="calisanSayisiDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>calisanSayisiDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FirmaAlimlarDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FirmaAlimlarDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FirmaRehberDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FirmaRehberDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FirmaSatislarDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FirmaSatislarDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FirmaSektorlerDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FirmaSektorlerDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Firma\frmFirmaAlimlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firma\frmFirmaAlimlar.Designer.cs">
+      <DependentUpon>frmFirmaAlimlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Firma\frmFirmaSatislar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firma\frmFirmaSatislar.Designer.cs">
+      <DependentUpon>frmFirmaSatislar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Firma\frmFirmaTnm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firma\frmFirmaTnm.Designer.cs">
+      <DependentUpon>frmFirmaTnm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Firma\frmUrunTnm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firma\frmUrunTnm.Designer.cs">
+      <DependentUpon>frmUrunTnm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBack.Designer.cs">
+      <DependentUpon>frmBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ilcelerDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ilcelerDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="isletmeTuru.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>isletmeTuru.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sehirlerDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sehirlerDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sektorlerDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sektorlerDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Tanimlar\frmIlceler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tanimlar\frmIlceler.Designer.cs">
+      <DependentUpon>frmIlceler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tanimlar\frmIsletmeTuru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tanimlar\frmIsletmeTuru.Designer.cs">
+      <DependentUpon>frmIsletmeTuru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tanimlar\frmSehirler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tanimlar\frmSehirler.Designer.cs">
+      <DependentUpon>frmSehirler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tanimlar\frmSektorler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tanimlar\frmSektorler.Designer.cs">
+      <DependentUpon>frmSektorler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tanimlar\frmUlkeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tanimlar\frmUlkeler.Designer.cs">
+      <DependentUpon>frmUlkeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tanimlar\frmYetkiliPozisyonTnm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tanimlar\frmYetkiliPozisyonTnm.Designer.cs">
+      <DependentUpon>frmYetkiliPozisyonTnm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tanimlar\frmYillikCiroTnm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tanimlar\frmYillikCiroTnm.Designer.cs">
+      <DependentUpon>frmYillikCiroTnm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ulkelerDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ulkelerDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UrunlerDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UrunlerDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="vwFirmaAdListDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vwFirmaAdListDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="yetkiliPozisyon.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>yetkiliPozisyon.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="yillikCiro.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>yillikCiro.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\SelecterForm.resx">
+      <DependentUpon>SelecterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firma\frmFirmaAlimlar.resx">
+      <DependentUpon>frmFirmaAlimlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firma\frmFirmaSatislar.resx">
+      <DependentUpon>frmFirmaSatislar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firma\frmFirmaTnm.resx">
+      <DependentUpon>frmFirmaTnm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firma\frmUrunTnm.resx">
+      <DependentUpon>frmUrunTnm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBack.resx">
+      <DependentUpon>frmBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Tanimlar\frmIlceler.resx">
+      <DependentUpon>frmIlceler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tanimlar\frmIsletmeTuru.resx">
+      <DependentUpon>frmIsletmeTuru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tanimlar\frmSehirler.resx">
+      <DependentUpon>frmSehirler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tanimlar\frmSektorler.resx">
+      <DependentUpon>frmSektorler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tanimlar\frmUlkeler.resx">
+      <DependentUpon>frmUlkeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tanimlar\frmYetkiliPozisyonTnm.resx">
+      <DependentUpon>frmYetkiliPozisyonTnm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tanimlar\frmYillikCiroTnm.resx">
+      <DependentUpon>frmYillikCiroTnm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="calisanSayisiDs.xsc">
+      <DependentUpon>calisanSayisiDs.xsd</DependentUpon>
+    </None>
+    <None Include="calisanSayisiDs.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>calisanSayisiDs.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="calisanSayisiDs.xss">
+      <DependentUpon>calisanSayisiDs.xsd</DependentUpon>
+    </None>
+    <None Include="FirmaAlimlarDs.xsc">
+      <DependentUpon>FirmaAlimlarDs.xsd</DependentUpon>
+    </None>
+    <None Include="FirmaAlimlarDs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FirmaAlimlarDs.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FirmaAlimlarDs.xss">
+      <DependentUpon>FirmaAlimlarDs.xsd</DependentUpon>
+    </None>
+    <None Include="FirmaRehberDataSet.xsc">
+      <DependentUpon>FirmaRehberDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FirmaRehberDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FirmaRehberDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FirmaRehberDataSet.xss">
+      <DependentUpon>FirmaRehberDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FirmaSatislarDs.xsc">
+      <DependentUpon>FirmaSatislarDs.xsd</DependentUpon>
+    </None>
+    <None Include="FirmaSatislarDs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FirmaSatislarDs.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FirmaSatislarDs.xss">
+      <DependentUpon>FirmaSatislarDs.xsd</DependentUpon>
+    </None>
+    <None Include="FirmaSektorlerDs.xsc">
+      <DependentUpon>FirmaSektorlerDs.xsd</DependentUpon>
+    </None>
+    <None Include="FirmaSektorlerDs.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FirmaSektorlerDs.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FirmaSektorlerDs.xss">
+      <DependentUpon>FirmaSektorlerDs.xsd</DependentUpon>
+    </None>
+    <None Include="ilcelerDs.xsc">
+      <DependentUpon>ilcelerDs.xsd</DependentUpon>
+    </None>
+    <None Include="ilcelerDs.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ilcelerDs.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ilcelerDs.xss">
+      <DependentUpon>ilcelerDs.xsd</DependentUpon>
+    </None>
+    <None Include="isletmeTuru.xsc">
+      <DependentUpon>isletmeTuru.xsd</DependentUpon>
+    </None>
+    <None Include="isletmeTuru.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>isletmeTuru.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="isletmeTuru.xss">
+      <DependentUpon>isletmeTuru.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="sehirlerDs.xsc">
+      <DependentUpon>sehirlerDs.xsd</DependentUpon>
+    </None>
+    <None Include="sehirlerDs.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sehirlerDs.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sehirlerDs.xss">
+      <DependentUpon>sehirlerDs.xsd</DependentUpon>
+    </None>
+    <None Include="sektorlerDs.xsc">
+      <DependentUpon>sektorlerDs.xsd</DependentUpon>
+    </None>
+    <None Include="sektorlerDs.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sektorlerDs.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sektorlerDs.xss">
+      <DependentUpon>sektorlerDs.xsd</DependentUpon>
+    </None>
+    <None Include="ulkelerDs.xsc">
+      <DependentUpon>ulkelerDs.xsd</DependentUpon>
+    </None>
+    <None Include="ulkelerDs.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ulkelerDs.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ulkelerDs.xss">
+      <DependentUpon>ulkelerDs.xsd</DependentUpon>
+    </None>
+    <None Include="UrunlerDs.xsc">
+      <DependentUpon>UrunlerDs.xsd</DependentUpon>
+    </None>
+    <None Include="UrunlerDs.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UrunlerDs.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UrunlerDs.xss">
+      <DependentUpon>UrunlerDs.xsd</DependentUpon>
+    </None>
+    <None Include="vwFirmaAdListDs.xsc">
+      <DependentUpon>vwFirmaAdListDs.xsd</DependentUpon>
+    </None>
+    <None Include="vwFirmaAdListDs.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>vwFirmaAdListDs.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="vwFirmaAdListDs.xss">
+      <DependentUpon>vwFirmaAdListDs.xsd</DependentUpon>
+    </None>
+    <None Include="yetkiliPozisyon.xsc">
+      <DependentUpon>yetkiliPozisyon.xsd</DependentUpon>
+    </None>
+    <None Include="yetkiliPozisyon.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>yetkiliPozisyon.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="yetkiliPozisyon.xss">
+      <DependentUpon>yetkiliPozisyon.xsd</DependentUpon>
+    </None>
+    <None Include="yillikCiro.xsc">
+      <DependentUpon>yillikCiro.xsd</DependentUpon>
+    </None>
+    <None Include="yillikCiro.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>yillikCiro.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="yillikCiro.xss">
+      <DependentUpon>yillikCiro.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADD1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADD.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\All-mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CHECK.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DELETE2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disk_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXIT.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXPORT1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FOLDERS.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GEAR.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gears_run.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMPORT1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_portrait.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIGNPOST.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DELETE.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.9.2">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2005 Express Edition SP2 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\FirmaRehber.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\FirmaRehber_log.ldf">
+      <DependentUpon>FirmaRehber.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logo.ico" />
+    <None Include="Resources\fr back.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

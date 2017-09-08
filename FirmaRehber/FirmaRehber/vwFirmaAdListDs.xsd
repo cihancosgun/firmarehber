@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="vwFirmaAdListDs" targetNamespace="http://tempuri.org/vwFirmaAdListDs.xsd" xmlns:mstns="http://tempuri.org/vwFirmaAdListDs.xsd" xmlns="http://tempuri.org/vwFirmaAdListDs.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DataConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DataConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.FirmaRehber.Properties.Settings.GlobalReference.Default.DataConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vwFirmaAdListTableAdapter" GeneratorDataComponentClassName="vwFirmaAdListTableAdapter" Name="vwFirmaAdList" UserDataComponentName="vwFirmaAdListTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DataConnectionString1 (Settings)" DbObjectName="dbo.vwFirmaAdList" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Id, FirmaAd FROM dbo.vwFirmaAdList</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="FirmaAd" DataSetColumn="FirmaAd" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="vwFirmaAdListDs" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="vwFirmaAdListDs" msprop:Generator_UserDSName="vwFirmaAdListDs">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vwFirmaAdList" msprop:Generator_TableClassName="vwFirmaAdListDataTable" msprop:Generator_TableVarName="tablevwFirmaAdList" msprop:Generator_TablePropName="vwFirmaAdList" msprop:Generator_RowDeletingName="vwFirmaAdListRowDeleting" msprop:Generator_UserTableName="vwFirmaAdList" msprop:Generator_RowChangingName="vwFirmaAdListRowChanging" msprop:Generator_RowEvHandlerName="vwFirmaAdListRowChangeEventHandler" msprop:Generator_RowDeletedName="vwFirmaAdListRowDeleted" msprop:Generator_RowEvArgName="vwFirmaAdListRowChangeEvent" msprop:Generator_RowChangedName="vwFirmaAdListRowChanged" msprop:Generator_RowClassName="vwFirmaAdListRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="FirmaAd" msprop:Generator_ColumnVarNameInTable="columnFirmaAd" msprop:Generator_ColumnPropNameInRow="FirmaAd" msprop:Generator_ColumnPropNameInTable="FirmaAdColumn" msprop:Generator_UserColumnName="FirmaAd" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vwFirmaAdList" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
